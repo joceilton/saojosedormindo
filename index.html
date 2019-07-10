@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Sao José Dormindo </title>
+</head>
+<body>
+
+<main style="background: #800000">
+
+	<header id="topo">
+
+		<img src="img/img01.png" alt="Orando" style="height: 100px;">
+		
+	</header>
+
+	<section id="content">
+		
+		<p style="position: relative;"> <img src="img/São-José_dormindo.png" alt="São José Dormindo" style="display: block; max-height: 80%; margin: 0 auto"> </p>
+
+		<p class="editar-pedido" style="position: relative; padding: 0 0 5% 0; background: #222">
+			<button class="enviar" style="border:0; background: #444; color: #fff; padding: 10px; font-size: 20px; position: absolute; bottom: 0; right: 10%; cursor: pointer;"> Enviar </button>
+			<textarea id="pedido" placeholder="Escreva seu pedido - Nenhum pedido será gravado" style="display: block; border: 0; min-width: 80vw; min-height: 150px; font-size: 20px; color: #444; font-style: arial, sans-serif; padding: 5px; margin: 0 auto"></textarea>
+		</p>
+
+
+
+	</section>
+
+</main>
+
+<style type="text/css">
+	
+	* {  padding: 0; margin: 0; }
+	body { min-height: 100%; }
+	main { min-height: 100vh; }
+
+	.editar-pedido {
+		color: #fff;
+		padding: 5px;
+		font-family: arial, sans-serif;
+		font-size: 20px;
+	}
+
+	.sair {
+		-webkit-transition: all 500ms cubic-bezier(0.600, 0.040, 0.980, 0.335); 
+   -moz-transition: all 500ms cubic-bezier(0.600, 0.040, 0.980, 0.335); 
+     -o-transition: all 500ms cubic-bezier(0.600, 0.040, 0.980, 0.335); 
+        transition: all 500ms cubic-bezier(0.600, 0.040, 0.980, 0.335); /* easeInCirc */
+
+-webkit-transition-timing-function: cubic-bezier(0.600, 0.040, 0.980, 0.335); 
+   -moz-transition-timing-function: cubic-bezier(0.600, 0.040, 0.980, 0.335); 
+     -o-transition-timing-function: cubic-bezier(0.600, 0.040, 0.980, 0.335); 
+        transition-timing-function: cubic-bezier(0.600, 0.040, 0.980, 0.335); /* easeInCirc */
+	}
+
+</style>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+
+		$(".enviar").on("click", function(e) {
+
+			e.preventDefault();
+
+			$("textarea").hide();
+
+			$(".enviar").hide();
+
+			$(".editar-pedido").html('<h2 style="text-align: center;">Oração poderosa de São José Dormindo</h2><p style="text-align: center;">São José Dormindo, com o Evangelho aprendemos que mais do que dormir, durante a noite, escutaste a voz de Deus com a prontidão de praticá-la.&nbsp;Hoje confiante em tua preciosa intercessão, consagro-te as alegrias e as tristezas de cada dia. Consagro-te minha vida, casa, família e trabalho.&nbsp;&nbsp;Ajuda-me a te imitar, sendo uma pessoa de bem, vivendo o amor, o perdão e a verdade. Quero seguir o teu caminho&nbsp;de fé.</p><p style="text-align: center;">&nbsp;Agora eu te peço São José Dormindo, sonha com este pedido junto de Deus.&nbsp;&nbsp;Interceda por mim, alcançando-me esta graça (……..)</p><p style="text-align: center;">Como És padroeiro da igreja, com auxílio do Espírito Santo, assumo diante de ti, o voto de não faltar a missa dominical, rezar todos os dias com a Bíblia, confessar-me regularmente e viver como um bom cristão.</p><p style="text-align: center;">Amém.</p>');
+
+	})
+
+</script>
+
+</body>
+</html>
