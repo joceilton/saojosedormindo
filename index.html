@@ -26,7 +26,7 @@
 			<button class="enviar" style="display: block; border:0; background: #444; color: #fff; padding: 10px; font-size: 20px;cursor: pointer; width: 30%;  margin: 10px auto;"> Enviar </button>
 		</div>
 
-
+<a href="" id="whatsapp-share-btt" rel="nofollow" target="_blank"><img src="img/whatsapp.png" alt="Compartilhar no whatsapp - Faça um pedido para São José Dormindo"></a>
 
 	</section>
 
@@ -35,8 +35,14 @@
 <style type="text/css">
 	
 	* {  padding: 0; margin: 0; }
-	body { min-height: 100%; }
+	body { min-height: 100%; background: #800000; }
 	main { min-height: 100vh; }
+
+	#whatsapp-share-btt {
+		position: fixed;
+		bottom: 30px;
+		right: 20px;
+	}
 
 	#topo {
 		padding: 5px;
@@ -77,6 +83,14 @@
   crossorigin="anonymous"></script>
 
 <script type="text/javascript">
+
+	//Constrói a URL depois que o DOM estiver pronto
+document.addEventListener("DOMContentLoaded", function() {
+    //conteúdo que será compartilhado: Título da página + URL
+    var conteudo = window.encodeURIComponent("São José Dormindo \n Faça um pedido para São José Dormindo \n" + window.location.href);
+    //altera a URL do botão
+    document.getElementById("whatsapp-share-btt").href = "https://api.whatsapp.com/send?text=" + conteudo;
+}, false);
 
 
 		$(".enviar").on("click", function(e) {
