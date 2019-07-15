@@ -4,10 +4,12 @@
   crossorigin="anonymous"></script>
 
 <script type="text/javascript">
+$(function() {
 $.get("https://www.padremarcelorossi.com.br/detalheliturgia.php?dia=15", function(data) {
 			//$("#liturgia").html(data);
 			alert(data);
 		});
+});
 </script>
 
 <div id="liturgia"></div>
