@@ -5,14 +5,12 @@
 
 <script type="text/javascript">
 $(function() {
-$.ajax({
-	url: "https://www.padremarcelorossi.com.br/detalheliturgia.php?dia=15",
-	method: "GET",
-	success: function(data) {
-		$("#liturgia").html(data)
-	}
+
+	$.get( "https://www.padremarcelorossi.com.br/detalheliturgia.php?dia=15", function( data ) {
+  		$( "#liturgia" ).html( data );
+  		alert( "Load was performed." );
+	});
 	
-});
 });
 </script>
 
